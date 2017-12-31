@@ -1,3 +1,17 @@
+The reasons I show this code file are follows:
+1. This code file shows my good code style such as indentation.
+
+2. This file is a typical Vue.js component, and it's used for music player main page, like play/pause a song. Besides, this file
+   contains many new features for today's single page application, like data binding, prop, event send/receive.
+   
+3. This file can best represent component style design pattern. For instance, this component combined "Scroll",
+   "playlist" children components. And each component has its own business logic and interface for communication with other components.
+   
+4. You can see my formatted code's layout pattern, first template, then ES6 script part, and finally style part. What's more, 
+   in my script part, each common function (which may be used by other components) is named with out '_'begin, and each private
+   function start with '_', not only for readability, but also more standard and used more often in real industry.
+
+
 <template>
   <div class="player" v-show="playlist.length>0">
     <transition name="normal" @enter="enter" @after-enter="afterEnter" @leave="leave" @after-leave="afterLeave">
